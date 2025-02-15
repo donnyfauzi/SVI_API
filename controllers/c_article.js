@@ -25,7 +25,7 @@ const createNewArticle = async (req, res) => {
         res.status(200).json({ message: 'Berhasil menambah artikel baru', newArticle })
 
     } catch (error) {
-        res.status(500).json({ message: "Terjadi kesalahan saat menambah artikel", error })
+        res.status(500).json({ message: 'Terjadi kesalahan saat menambah artikel', error })
     } 
 }
 
