@@ -40,6 +40,7 @@ const router = express.Router()
  *                          - Publish
  *                          - Draft
  *                          - Thrash
+ *                         example: 'Publish, Draft, Thrash'
  *       500:
  *         description: Terjadi kesalahan saat mengambil artikel
 */

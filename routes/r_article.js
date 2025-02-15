@@ -20,20 +20,20 @@ const router = express.Router()
  *             properties:
  *               title:
  *                 type: string
- *                 example: 'Judul Artikel'
+ *                 default: ''
  *               content:
  *                 type: text
- *                 example: 'Konten Artiker'
+ *                 default: ''
  *               category:
  *                 type: string
- *                 example: 'Kategory Artikel'
+ *                 default: ''
  *               status:
  *                 type: string
  *                 enum:
  *                    - Publish
  *                    - Draft
  *                    - Trash
- *                 example: 'Publish'
+ *                 default: ''
  *     responses:
  *       200:
  *         description: Berhasil menambahkan article baru    
