@@ -2,6 +2,7 @@ const express       = require('express')
 const bodyPaser     = require('body-parser')
 const swaggerJsDoc  = require('swagger-jsdoc')
 const swaggerUi     = require('swagger-ui-express')
+const cors          = require('cors')
 
 const app           = express()
 const port          = 5000
@@ -39,6 +40,7 @@ const swaggerDocs = swaggerJsDoc(swaggerOptions)
 app.use('/api-SVI-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
 app.use(bodyPaser.json())
+app.use(cors())
 
 app.use('/api', r_article)
 app.use('/api', r_getArticle)
